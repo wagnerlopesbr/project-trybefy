@@ -9,7 +9,7 @@ FROM
     ON artists.id = albums.artist_id
   INNER JOIN
     songs
-    ON artists.id = songs.album_id
+    ON albums.id = songs.album_id
   WHERE
     artists.id != 3
 ORDER BY
